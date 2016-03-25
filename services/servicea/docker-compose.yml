@@ -1,0 +1,10 @@
+servicea:
+  build: .
+  env_file: ./services/servicea/env_file
+  command: /bin/true
+
+servicea_api:
+  extends:
+    file: ./services/servicea/docker-compose.yml
+    service: servicea
+  command: "echo 'neste'd && env"
