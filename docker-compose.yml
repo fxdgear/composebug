@@ -5,6 +5,6 @@ servicea:
 
 servicea_api:
   extends:
-    file: ./services/servicea/docker-compose.yml
+    file: ./docker-compose.yml
     service: servicea
   command: "echo 'root' && env"
